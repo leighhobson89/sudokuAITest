@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sudoku Game</title>
+    <!-- Google Fonts for themes -->
+    <link href="https://fonts.googleapis.com/css?family=Fira+Mono:400,700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Quicksand:400,700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Rubik:400,700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Noto+Serif:400,700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Orbitron:400,700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Exo:400,700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Comfortaa:400,700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Inter:400,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="stars-extra"></div>
+    <div class="container">
+        <h1>Sudoku Game</h1>
+        <div class="controls">
+            <label for="board-size">Board Size:</label>
+            <select id="board-size">
+                <option value="3">3x3x3 (9x9)</option>
+                <option value="4">4x4x4 (16x16)</option>
+                <option value="5">5x5x5 (25x25)</option>
+            </select>
+            <label for="theme-select">Theme:</label>
+            <select id="theme-select">
+                <option value="retro">Retro Terminal</option>
+                <option value="frosty">Frosty</option>
+                <option value="ocean">Ocean Shadow</option>
+                <option value="forest">Forest</option>
+                <option value="space">Space</option>
+                <option value="dark">Dark</option>
+                <option value="misty">Misty</option>
+                <option value="light">Light</option>
+            </select>
+            <button id="new-game">New Game</button>
+            <button id="regenerate">Regenerate (-10 pts)</button>
+        </div>
+        <div class="scoreboard">
+            <span id="timer">Time: 00:00</span>
+            <span id="points">Points: 0</span>
+            <span id="best-time">Best: --:--</span>
+            <span id="lives">Lives: 3</span>
+        </div>
+        <div class="game-area">
+            <div id="number-bar"></div>
+            <div id="sudoku-board"></div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
