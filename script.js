@@ -326,7 +326,8 @@ function saveTheme(theme) {
     localStorage.setItem('sudoku_theme', theme);
 }
 function loadTheme() {
-    let theme = localStorage.getItem('sudoku_theme') || 'retro';
+    const defaultTheme = 'frosty';
+    let theme = localStorage.getItem('sudoku_theme') || defaultTheme;
     applyTheme(theme);
 }
 themeSelect.addEventListener('change', () => {
